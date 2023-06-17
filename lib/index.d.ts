@@ -13,6 +13,7 @@ declare abstract class DateUtilsImplement implements IDateUtils {
 }
 declare class DateUtils extends DateUtilsImplement {
     constructor(_dateTime?: string | null);
+    static parse: (dateTime: string) => DateUtils;
     getDateTime: () => Date;
     getDaysInMonth: () => number;
     isLeapYear: () => boolean;
